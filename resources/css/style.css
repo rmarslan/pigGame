@@ -1,0 +1,152 @@
+/*---------------------------------*/
+/* General Settings */
+/*---------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  background:linear-gradient(rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.7)), url(img/back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/*---------------------------------*/
+/* Reuseable Components */
+/*---------------------------------*/
+
+/* Grid */
+.container{
+  width: 1000px;
+  height: auto;
+  background-color: rgba(255,255,255,0.9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 10px #555, 2px 3px 10px #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.player-0-board{
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.player-1-board{
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+
+/* Input the wining score */
+.row{
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.input-wining-marks{
+  margin-bottom: 10px;
+}
+
+/* Dice Image */
+.dice{
+  width: 70px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Score Boards */
+.player-0-score-board,
+.player-1-score-board{
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.score-0,
+.score-1{
+  color: #f23c23;
+  font-weight: 300;
+  font-size: 400%;
+}
+
+.player-0-current,
+.player-1-current{
+  background-color: #f23c23;
+  width: 150px;
+  margin: 0px auto 50px auto;
+  height: 100px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.player-0-current-score,
+.player-1-current-score{
+  font-size: 160%;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Game Control Buttons*/
+.btn{
+  display: inline-block;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  color: #333;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%); 
+}
+.btn-new{
+  top: 100px;
+}
+.btn-roll{
+  bottom: 110px;
+}
+.btn-hold{
+  bottom: 60px;
+}
+
+/* Active player */
+.active{
+  background-color: #cacacaab;
+} 
+
+.active h1::before{
+  display: inline-block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  background-color: #f23c23;
+  border-radius: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-top: -8px; 
+}
+/* Headings & Paras */
+h1{
+  color: #555;
+  font-weight: 300;
+  font-size: 200%;
+}
+
+p{
+  font-size: 120%;
+  font-weight: 300;
+}
